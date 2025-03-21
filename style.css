@@ -1,0 +1,107 @@
+/* Animation for fading in */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Animation for input field focus */
+@keyframes focusAnimation {
+    from { border-color: #ccc; }
+    to { border-color: #00ff00; }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #0a0a0a;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.container {
+    max-width: 600px;
+    margin-top: -50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    opacity: 0.8;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: gray;
+}
+
+.input-group {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Style for input */
+input[type="text"] {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: 2px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    background-color: #222;
+    color: white;
+}
+
+input[type="text"]:focus {
+    animation: focusAnimation 0.5s ease-in-out;
+    border-color: #00ff00;
+    background-color: #333;
+}
+
+/* Style for Track Order button */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+.btn svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    fill: black;
+}
+
+/* Footer Section */
+.footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.8rem;
+    color: gray;
+}
