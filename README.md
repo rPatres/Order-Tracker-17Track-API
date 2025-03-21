@@ -8,9 +8,14 @@ This is a simple order tracking app that uses the 17track API to allow users to 
 - Backend: Express.js server to handle API requests.
 - Tracks orders using the 17track API.
 
+## Screenshot
+
+![Order Tracking App Frontend](https://i.postimg.cc/x8yX9Yy1/Screenshot-2025-03-21-121242.png)
+
 ## Installation
 
 1. Clone the repository:
+
     ```bash
     git clone https://github.com/your-username/order-tracking-app.git
     cd order-tracking-app
@@ -21,6 +26,7 @@ This is a simple order tracking app that uses the 17track API to allow users to 
 
 3. Set up the backend:
     - Install dependencies:
+
         ```bash
         npm install
         ```
@@ -28,6 +34,7 @@ This is a simple order tracking app that uses the 17track API to allow users to 
     - Add your 17track API key to the `.env` file.
 
 4. Run the backend:
+
     ```bash
     npm start
     ```
